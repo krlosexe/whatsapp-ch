@@ -80,8 +80,7 @@ const Login = (props) => {
                                     <img src={"https://chseguros.com.co/wp-content/uploads/2021/09/nuevologo-1.svg"} alt="" height="30" className="logo logo-light" />
                                 </Link>
 
-                                <h4>{t('Sign in')}</h4>
-                                <p className="text-muted mb-4">{t('Sign in to continue to Chatvia')}.</p>
+                                <h4>{t('Iniciar Sesión')}</h4>
 
                             </div>
 
@@ -95,7 +94,7 @@ const Login = (props) => {
                                         <Form onSubmit={formik.handleSubmit}>
 
                                             <div className="mb-3">
-                                                <Label className="form-label">{t('Username')}</Label>
+                                                <Label className="form-label">{t('Usuario')}</Label>
                                                 <InputGroup className="mb-3 bg-soft-light rounded-3">
                                                     <span className="input-group-text text-muted" id="basic-addon3">
                                                         <i className="ri-user-2-line"></i>
@@ -105,7 +104,7 @@ const Login = (props) => {
                                                         id="email"
                                                         name="email"
                                                         className="form-control form-control-lg border-light bg-soft-light"
-                                                        placeholder="Enter email"
+                                                        placeholder="Usuario"
                                                         onChange={formik.handleChange}
                                                         onBlur={formik.handleBlur}
                                                         value={formik.values.email}
@@ -119,9 +118,8 @@ const Login = (props) => {
 
                                             <FormGroup className="mb-4">
                                                 <div className="float-end">
-                                                    <Link to="forget-password" className="text-muted font-size-13">{t('Forgot password')}?</Link>
                                                 </div>
-                                                <Label className="form-label">{t('Password')}</Label>
+                                                <Label className="form-label">{t('Contraseña')}</Label>
                                                 <InputGroup className="mb-3 bg-soft-light rounded-3">
                                                     <span className="input-group-text text-muted">
                                                         <i className="ri-lock-2-line"></i>
@@ -131,7 +129,7 @@ const Login = (props) => {
                                                         id="password"
                                                         name="password"
                                                         className="form-control form-control-lg border-light bg-soft-light"
-                                                        placeholder="Enter Password"
+                                                        placeholder="Contraseña"
                                                         onChange={formik.handleChange}
                                                         onBlur={formik.handleBlur}
                                                         value={formik.values.password}
@@ -146,11 +144,11 @@ const Login = (props) => {
 
                                             <div className="form-check mb-4">
                                                 <Input type="checkbox" className="form-check-input" id="remember-check" />
-                                                <Label className="form-check-label" htmlFor="remember-check">{t('Remember me')}</Label>
+                                                <Label className="form-check-label" htmlFor="remember-check">{t('Recordarme')}</Label>
                                             </div>
 
                                             <div className="d-grid">
-                                                <Button color="primary" block className=" waves-effect waves-light" type="submit">{t('Sign in')}</Button>
+                                                <Button color="primary" block className=" waves-effect waves-light" type="submit">{t('Ingresar')}</Button>
                                             </div>
 
                                         </Form>
@@ -159,8 +157,7 @@ const Login = (props) => {
                             </Card>
 
                             <div className="mt-5 text-center">
-                                <p>{t("Don't have an account")} ? <Link to="register" className="font-weight-medium text-primary"> {t('Signup now')} </Link> </p>
-                                <p>© {t('2021 Chatvia')}. {t('Creado con')} <i className="mdi mdi-heart text-danger"></i> {t('por Carlos Cardenas')}</p>
+                                <p>© {t('2021 CHSEGUROS')}. {t('Creado con')} <i className="mdi mdi-heart text-danger"></i> {t('por Carlos Cardenas')}</p>
                             </div>
                         </Col>
                     </Row>

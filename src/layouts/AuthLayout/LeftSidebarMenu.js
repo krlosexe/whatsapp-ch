@@ -134,7 +134,7 @@ function LeftSidebarMenu(props) {
                             </NavLink>
                             
                         </NavItem>
-                        <UncontrolledTooltip target="profile" placement="top">
+                        {/*  <UncontrolledTooltip target="profile" placement="top">
                             Nuevos Chats
                         </UncontrolledTooltip>
                         <NavItem id="Chats">
@@ -142,6 +142,7 @@ function LeftSidebarMenu(props) {
                                 <i className="ri-message-3-line"></i>
                             </NavLink>
                         </NavItem>
+                         */}
                         <UncontrolledTooltip target="Chats" placement="top">
                         Chats
                         </UncontrolledTooltip>
@@ -150,7 +151,7 @@ function LeftSidebarMenu(props) {
                                 <i className="ri-group-line"></i>
                             </NavLink>
                         </NavItem>
-                        <UncontrolledTooltip target="Groups" placement="top">
+                        {/* <UncontrolledTooltip target="Groups" placement="top">
                         Groups
                         </UncontrolledTooltip>
                         <NavItem id="Contacts">
@@ -169,6 +170,7 @@ function LeftSidebarMenu(props) {
                         <UncontrolledTooltip target="Settings" placement="top">
                             Settings
                         </UncontrolledTooltip>
+                        */}
                         <Dropdown nav isOpen={dropdownOpenMobile} toggle={toggleMobile} className="profile-user-dropdown d-inline-block d-lg-none">
                             <DropdownToggle nav>
                                 <img src={avatar1} alt="chatvia" className="profile-user rounded-circle" />

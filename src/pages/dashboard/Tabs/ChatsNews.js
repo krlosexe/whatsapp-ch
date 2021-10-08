@@ -276,7 +276,7 @@ class Chats extends Component {
                                                 <i className="ri-search-line search-icon font-size-18"></i>
                                             </Button>
                                         </InputGroupAddon>
-                                        <Input type="text" value={this.state.searchChat} onChange={(e) => this.handleChange(e)} className="form-control bg-light" placeholder="Search messages or users" />
+                                        <Input type="text" value={this.state.searchChat} onChange={(e) => this.handleChange(e)} className="form-control bg-light" placeholder="Buscar mensaje o usuario" />
                                     </InputGroup> 
                                 </div>
                                 {/* Search Box */}
@@ -287,7 +287,7 @@ class Chats extends Component {
 
                             {/* Start chat-message-list  */}
                             <div className="px-2">
-                                <h5 className="mb-3 px-3 font-size-16">Recent</h5>
+                                <h5 className="mb-3 px-3 font-size-16">Reciente</h5>
                                 <SimpleBar style={{ maxHeight: "100%" }} className="chat-message-list">
 
                                     <ul className="list-unstyled chat-list chat-user-list" id="chat-list">
